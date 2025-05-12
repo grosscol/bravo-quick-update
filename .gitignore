@@ -1,2 +1,3 @@
 # Ignore Jekyll's build artifacts
 _site/*
+*.pdf

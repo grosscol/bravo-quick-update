@@ -9,7 +9,7 @@ git clone --shallow-submodules --recurse-submodules \
   https://github.com/grosscol/slides-template.git newname
 ```
 
-## Writing & Building Slides
+### Writing & Building Slides
 
 Create entire slide deck (index.html) from markdown files in slides/ directory.
 Slide will be assembled in alphabetical order by filename.
@@ -19,7 +19,7 @@ pandoc -t revealjs --template=pandoc-templates/default.revealjs \
   -V reveal.js=./reveal.js  -V theme=white slides/*.md
 ```
 
-## Publishing to Github Pages
+### Publishing to Github Pages
 
 1. Create repo: https://github.com/new
 1. Set repo as remote
@@ -33,6 +33,11 @@ pandoc -t revealjs --template=pandoc-templates/default.revealjs \
 1. Change repository settings on github to serve Github Pages from gh-branch.
 [more info](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
 
+### Converting to PDF
+Using node.js package, [decktape](https://github.com/astefanutti/decktape), after presentation has been built:
+```sh
+decktape reveal index.html presentation.pdf
+```
 
 ## Dependencies
 
@@ -41,11 +46,9 @@ Required and used to generate the slides html.
 
 Installation: https://pandoc.org/installing.html
 
-
 ### Jekyll
 The underlying technology that powers github pages.
-Not required to generate slides,
-but useful for examining how the github pages branch will be processed.
+Not required to generate slides, but useful for examining how the github pages branch will be processed.
 
 Installation: https://jekyllrb.com/docs/installation/
 
