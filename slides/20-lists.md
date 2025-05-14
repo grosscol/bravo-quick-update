@@ -1,7 +1,4 @@
 ---
-author: Display Lab
-title: Demo Slides
----
 
 # Fourth Title
 - Duis at tellus at urna condimentum mattis pellentesque. 

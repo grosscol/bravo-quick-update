@@ -1,7 +1,4 @@
 ---
-author: Display Lab
-title: Demo Slides
----
 
 # Seventh Title
 

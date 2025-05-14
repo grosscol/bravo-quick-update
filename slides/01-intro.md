@@ -1,14 +1,16 @@
 ---
-author: Display Lab
-title: Demo Slides
+author: grosscol
+title: Presentation
+date: 9999-09-09
 ---
+
 
 # First Title
 Welcome to the first slide.
 
 Display Lab
 
-2019-05-21
+${date}
 
 # Second Title
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

@@ -1,7 +1,4 @@
 ---
-author: Display Lab
-title: Demo Slides
----
 
 # Third Title
 Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. 
