@@ -1,18 +1,11 @@
 ---
-author: grosscol
-title: Presentation
-date: 9999-09-09
+author: Colin Gross
+title: UI Build Systems
+date: 2025-05-14
 ---
 
-
-# First Title
-Welcome to the first slide.
-
-Display Lab
-
-${date}
-
-# Second Title
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Vitae justo eget magna fermentum iaculis. 
+# Topics
+- Reveal.js Presentations
+- Webpack for Vue Apps
+- Vite for Vue Apps
 
