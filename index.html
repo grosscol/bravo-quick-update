@@ -318,6 +318,15 @@ webpack-based toolchain for Vue. It is now in maintenance mode..</li>
 <h2>TypeScript Support</h2>
 <p>The Vite build chain makes using .ts less painful and error prone
 than Webpack.</p>
+<p>No more untyped madness</p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode js"><code class="sourceCode javascript"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>[] <span class="op">+</span> [] <span class="op">===</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>[] <span class="op">+</span> {} <span class="op">===</span> <span class="bu">Object</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>{} <span class="op">+</span> [] <span class="op">===</span> <span class="dv">0</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>{} <span class="op">+</span> {} <span class="op">===</span> <span class="kw">NaN</span></span></code></pre></div>
+</section>
+<section id="typescript-advantages" class="slide level2">
+<h2>Typescript Advantages</h2>
 <ul>
 <li>Static typing shows expected types of args and objects.</li>
 <li>Type errors detectable at compile time.</li>

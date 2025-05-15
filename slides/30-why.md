@@ -30,6 +30,16 @@ Migration of supporting libraries for Vue3
 
 The Vite build chain makes using .ts less painful and error prone than Webpack.
 
+No more untyped madness
+```js
+[] + [] === ""
+[] + {} === Object
+{} + [] === 0
+{} + {} === NaN
+```
+
+## Typescript Advantages
+
 - Static typing shows expected types of args and objects.
 - Type errors detectable at compile time.
 - Better debugging traces.
