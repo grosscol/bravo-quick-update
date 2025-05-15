@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <meta name="author" content="grosscol">
-  <meta name="dcterms.date" content="9999-09-09">
-  <title>Presentation</title>
+  <meta name="author" content="Colin Gross">
+  <meta name="dcterms.date" content="2025-05-14">
+  <title>UI Build Systems</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -103,113 +103,230 @@
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Presentation</h1>
-  <p class="author">grosscol</p>
+  <h1 class="title">UI Build Systems</h1>
+  <p class="author">Colin Gross</p>
   <p class="date">2025-05-14</p>
 </section>
 
-<section id="first-title" class="title-slide slide level1">
-<h1>First Title</h1>
-<p>Welcome to the first slide.</p>
-<p>Display Lab</p>
-<p>${date}</p>
-</section>
-
-<section>
-<section id="second-title" class="title-slide slide level1">
-<h1>Second Title</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae justo
-eget magna fermentum iaculis.</p>
-</section>
-<section class="slide level2">
-
-</section></section>
-<section>
-<section id="third-title" class="title-slide slide level1">
-<h1>Third Title</h1>
-<p>Tortor pretium viverra suspendisse potenti nullam ac tortor vitae.
-Nunc mattis enim ut tellus elementum sagittis vitae et.</p>
-</section>
-<section id="sub-1" class="slide level2">
-<h2>3 Sub 1</h2>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">&quot;Hello World&quot;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>(<span class="dv">1</span><span class="op">..</span><span class="dv">10</span>)<span class="at">.each</span><span class="op">{</span> <span class="op">|</span>n<span class="op">|</span> <span class="fu">puts</span> n<span class="op">+</span><span class="dv">10</span> <span class="op">}</span></span></code></pre></div>
-<p>Enim nulla aliquet porttitor lacus luctus accumsan. Nulla
-pellentesque dignissim enim sit amet.</p>
-</section>
-<section id="sub-2" class="slide level2">
-<h2>3 Sub 2</h2>
-<p><del>Auctor neque vitae tempus quam pellentesque.</del></p>
-<h3
-id="scelerisque-viverra-mauris-in-aliquam-sem-fringilla.">Scelerisque
-viverra mauris in aliquam sem fringilla.</h3>
-<p>Donec pretium vulputate sapien nec sagittis aliquam malesuada
-bibendum.</p>
-</section>
-<section id="sub-3" class="slide level2">
-<h2>3 Sub 3</h2>
-<p><em>Massa id neque aliquam vestibulum morbi blandit cursus risus
-at.</em> <em>Vestibulum sed arcu non odio euismod.</em> <strong>Ut
-tellus elementum sagittis vitae et leo duis ut.</strong></p>
-</section>
-<section class="slide level2">
-
-</section></section>
-<section id="fourth-title" class="title-slide slide level1">
-<h1>Fourth Title</h1>
+<section id="topics" class="title-slide slide level1">
+<h1>Topics</h1>
 <ul>
-<li>Duis at tellus at urna condimentum mattis pellentesque.</li>
-<li>Morbi leo urna molestie at elementum eu facilisis sed.</li>
-<li>Vel elit scelerisque mauris pellentesque pulvinar pellentesque.</li>
+<li>Reveal.js Presentations</li>
+<li>Webpack for Vue Apps</li>
+<li>Vite for Vue Apps</li>
 </ul>
 </section>
 
-<section id="section" class="title-slide slide level1">
-<h1></h1>
+<section>
+<section id="reveal.js" class="title-slide slide level1">
+<h1>Reveal.js</h1>
+<p>The javascript framework that powers this presentation.</p>
+<ul>
+<li>Themed</li>
+<li>Navigation</li>
+<li>Browser Support</li>
+</ul>
+</section>
+<section id="reveal-markup" class="slide level2">
+<h2>Reveal Markup</h2>
+<p>Is built ontop of html.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;reveal&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;slides&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">section</span><span class="dt">&gt;</span>Slide 1<span class="dt">&lt;/</span><span class="kw">section</span><span class="dt">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">section</span><span class="dt">&gt;</span>Slide 2<span class="dt">&lt;/</span><span class="kw">section</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div>
+</section>
+<section id="markdown" class="slide level2">
+<h2>Markdown</h2>
+<p>Less boiler plate</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Slide 1</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu"># Slide 2</span></span></code></pre></div>
+</section>
+<section id="pandoc" class="slide level2">
+<h2>Pandoc</h2>
+<blockquote>
+<p>If you need to convert files from one markup format into another,
+pandoc is your swiss-army knife.</p>
+</blockquote>
+<p>Command line tool that facilitates writing in markdown and producing
+other formats.</p>
+</section>
+<section id="pandoc-for-.md---.html" class="slide level2">
+<h2>Pandoc for .md -&gt; .html</h2>
+<p><a href="https://github.com/jgm/pandoc-templates">Pandoc
+Templates</a> has a ready made template for Reveal.js</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> <span class="dt">\</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">-t</span> revealjs <span class="dt">\</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--template</span><span class="op">=</span>pandoc-templates/default.revealjs <span class="dt">\</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">-o</span> index.html slides/<span class="pp">*</span>.md</span></code></pre></div>
+</section>
+<section id="build-system-for-slides" class="slide level2">
+<h2>Build System for Slides</h2>
 <ol type="1">
-<li>Pellentesque diam volutpat commodo sed egestas egestas fringilla
-phasellus faucibus.</li>
-<li>Curabitur vitae nunc sed velit dignissim sodales ut eu.</li>
-<li>Urna nec tincidunt praesent semper feugiat nibh sed.</li>
+<li>Clone base <a
+href="https://grosscol.github.io/slides-template">slides repo</a> into
+new project</li>
+<li>Write .md files in slides dir</li>
+<li>Run build script (pandoc)</li>
+<li>Commit and push to github.</li>
 </ol>
 </section>
-
+<section id="converting-to-pdf" class="slide level2">
+<h2>Converting to PDF</h2>
+<p>Using node.js package, <a
+href="https://github.com/astefanutti/decktape">decktape</a>, after
+presentation has been built:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">decktape</span> reveal index.html presentation.pdf</span></code></pre></div>
+</section>
+<section id="project-layout" class="slide level2">
+<h2>Project layout</h2>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode txt"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>├── build_slides.sh</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>├── index.html</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>├── pandoc-templates/</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>│   └── default.revealjs</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>├── reveal.js/</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>└── slides/</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    ├── 01-intro.md</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    ├── 10-middle.md</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    └── 20-end.md</span></code></pre></div>
+</section></section>
 <section>
-<section id="sixth-title" class="title-slide slide level1">
-<h1>Sixth Title</h1>
+<section id="webpack" class="title-slide slide level1">
+<h1>Webpack</h1>
 <ul>
-<li>Suspendisse potenti nullam ac tortor vitae.</li>
-<li>Congue quisque egestas diam in arcu cursus euismod.</li>
-<li>Consectetur adipiscing elit duis tristique sollicitudin.</li>
+<li>Bundles separate .js files together</li>
+<li>Plugins for doing build jobs:
+<ul>
+<li>Minifies javascript</li>
+<li>Handling assets (images and .css)</li>
+</ul></li>
+<li>Similar to CMake</li>
 </ul>
 </section>
-<section class="slide level2">
-
+<section id="configuration" class="slide level2">
+<h2>Configuration</h2>
+<p>Lots of it: package.json, vue.config.js, babel.config.js</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="er">&quot;name&quot;:</span> <span class="er">&quot;bravue&quot;,</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="er">&quot;scripts&quot;:</span> <span class="fu">{</span> <span class="dt">&quot;build&quot;</span><span class="fu">:</span> <span class="st">&quot;vue-cli-service build&quot;</span> <span class="fu">}</span><span class="er">,</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="er">&quot;dependencies&quot;:</span> <span class="fu">{</span> <span class="dt">&quot;@coreui/vue&quot;</span><span class="fu">:</span> <span class="st">&quot;^4.4.0&quot;</span><span class="fu">,</span> <span class="er">...</span> <span class="fu">}</span><span class="er">,</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="er">&quot;eslintConfig&quot;:</span> <span class="fu">{</span> <span class="dt">&quot;extends&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;plugin:vue/vue3-essential&quot;</span><span class="ot">]</span> <span class="fu">}</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">process</span><span class="op">.</span><span class="at">env</span><span class="op">.</span><span class="at">VUE_APP_VERSION</span> <span class="op">=</span> <span class="pp">require</span>(<span class="st">&#39;./package.json&#39;</span>)<span class="op">.</span><span class="at">version</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>module<span class="op">.</span><span class="at">exports</span> <span class="op">=</span> {</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">publicPath</span><span class="op">:</span> <span class="st">&#39;/&#39;</span><span class="op">,</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">pages</span><span class="op">:</span> {<span class="op">...</span>}</span></code></pre></div>
+</section>
+<section id="processes-sources" class="slide level2">
+<h2>Processes Sources</h2>
+<p>Consolidate src files and dependencies</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode txt"><code class="sourceCode default"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>src/</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>├── assets/</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>├── components/</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>└── pages/</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>19 directories, 95 files</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode txt"><code class="sourceCode default"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>node_modules/</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>5145 directories, 40573 files</span></code></pre></div>
+</section>
+<section id="results" class="slide level2">
+<h2>Results</h2>
+<p>src + dependencies (784Mb) -&gt; dist bundle (12Mb)</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode txt"><code class="sourceCode default"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>dist/</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>├── 404.html</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>├── about.html</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>├── css/</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>├── favicon.ico</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>├── favicon.svg</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>├── img/</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>├── index.html</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>└── js/</span></code></pre></div>
 </section></section>
 <section>
-<section id="seventh-title" class="title-slide slide level1">
-<h1>Seventh Title</h1>
-<p>Image content</p>
-<p><img data-src="assets/top_perf.svg" /></p>
+<section id="vite" class="title-slide slide level1">
+<h1>Vite</h1>
+<ul>
+<li>Written by creator of Vue.js</li>
+<li>Uses native ES modules</li>
+<li>Fast</li>
+<li>Rollup plugins</li>
+<li>Written by creator of Vue.js</li>
+</ul>
 </section>
-<section id="section-1" class="slide level2">
-<h2></h2>
-<figure>
-<img data-src="assets/top_perf.svg" width="250" alt="image title" />
-<figcaption aria-hidden="true">image title</figcaption>
-</figure>
+<section id="configuration-1" class="slide level2">
+<h2>Configuration</h2>
+<p>Still lots: cpyress.config.js, eslint.config.js, jsonconfig.json,
+package.json, vite.config.js, vitest.config.js, vue.config.js</p>
 </section>
-<section class="slide level2">
-
+<section id="bundling" class="slide level2">
+<h2>Bundling</h2>
+<blockquote>
+<p>Vite converts ESM dependencies with many internal modules into a
+single module to improve subsequent page load performance.</p>
+</blockquote>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode js"><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> {debounce} <span class="im">from</span> <span class="st">&#39;lodash&#39;</span></span></code></pre></div>
+<p>Without pre-bundling the above import would result in 100’s of http
+requests due to how the lodash package is structured.</p>
+</section>
+<section id="processes-sources-into-distributable" class="slide level2">
+<h2>Processes Sources into Distributable</h2>
+<p>Produces a similar distributable files in <code>dist/</code></p>
 </section></section>
-<section id="seventh-title-1" class="title-slide slide level1">
-<h1>Seventh Title</h1>
-<p>Incremental fragments</p>
-<p><span class="fragment"> stuff </span></p>
-<p><span class="fragment"> other </span></p>
-<p><span class="fragment"> stuff </span></p>
+<section>
+<section id="why-vite-over-webpack" class="title-slide slide level1">
+<h1>Why Vite over Webpack?</h1>
+<ul>
+<li>Happy Path</li>
+<li>Documentation</li>
+<li>Maintenance</li>
+</ul>
+</section>
+<section id="vue-developer-recommendations" class="slide level2">
+<h2>Vue Developer Recommendations</h2>
+<p>Migration of supporting libraries for Vue3</p>
+<ul>
+<li>New versions of Router, Devtools &amp; test utils w/ Vue 3
+support</li>
+<li>Build Toolchain: Vue CLI -&gt; Vite</li>
+<li>State Management: Vuex -&gt; Pinia</li>
+<li>IDE Support: Vetur -&gt; Volar</li>
+<li>New command line TypeScript support: vue-tsc</li>
+<li>SSG: VuePress -&gt; VitePress</li>
+<li>JSX: <span class="citation"
+data-cites="vue/babel-preset-jsx">@vue/babel-preset-jsx</span> -&gt;
+<span class="citation"
+data-cites="vue/babel-plugin-jsx">@vue/babel-plugin-jsx</span></li>
+</ul>
+</section>
+<section id="vue-documentation" class="slide level2">
+<h2>Vue Documentation</h2>
+<ul>
+<li>Config examples use Vite.</li>
+<li>Deprecation of old tooling &gt; Vue CLI is the official
+webpack-based toolchain for Vue. It is now in maintenance mode..</li>
+<li>Testing examples rely on Vitest</li>
+</ul>
+</section>
+<section id="typescript-support" class="slide level2">
+<h2>TypeScript Support</h2>
+<p>The Vite build chain makes using .ts less painful and error prone
+than Webpack.</p>
+<ul>
+<li>Static typing shows expected types of args and objects.</li>
+<li>Type errors detectable at compile time.</li>
+<li>Better debugging traces.</li>
+</ul>
+</section></section>
+<section id="end-of-line" class="title-slide slide level1">
+<h1>End of Line</h1>
+
 </section>
     </div>
   </div>
