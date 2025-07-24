@@ -1,11 +1,13 @@
 ---
 author: Colin Gross
-title: UI Build Systems
-date: 2025-05-14
+title: Quick Bravo Update
+date: 2025-07-24
 ---
 
 # Topics
-- Reveal.js Presentations
-- Webpack for Vue Apps
-- Vite for Vue Apps
+- eQTL data
+- Public VCFs
+- Structual Variants
+- UI Tech Update
+- ORCID Auth
 
