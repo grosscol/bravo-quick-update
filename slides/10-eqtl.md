@@ -1,13 +1,13 @@
 ---
 ---
 
-# eQTL
+# eQTL Data
 
 Freeze 1 data live on production site
 
 ## Data Processed via Nextflow
 
-modular compositions of processes that are called like functions
+Framework standard modular composition.
 
 ```nf
 workflow susie_eqtl {
@@ -25,7 +25,8 @@ workflow susie_eqtl {
 ```
 
 ## Visualization in a Vue Component.
-Table with information about each eQTL
+
+Framework standard modular composition.
 
 ```html
 <template>
